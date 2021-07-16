@@ -1,0 +1,9 @@
+/* BASIC STYLES HERE */
+.gradient{
+  /* background: linear-gradient(to right, #0cebeb, #20e3b2, #29ffc6); */
+  background: linear-gradient(to right, #06beb6, #48b1bf);
+}
+
+.text-shadow{
+  text-shadow: 2px 1px black;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/style/main.css">
+    <link rel="stylesheet" href="assets/style/style.css">
+    <title>Vender</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar gradient navbar-expand bg-dark text-light">
+            <a class="navbar-brand">
+                <span class="ml-2 text-shadow"><i class="fas fa-cookie-bite fa-spin mr-3"></i>Vender</span>
+            </a>
+        </nav>
+    </header>
+    <main class="container">
+        <div class="row mt-5 text-center">
+            <div class="col-6">
+                <div class="dropdown">
+                    <button class="btn btn-outline-info dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Add Money
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <div class="dropdown-item" onclick="app.vendingController.addMoney(1)">Dollar</div>
+                      <div class="dropdown-item" onclick="app.vendingController.addMoney(.25)">Quarter</div>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-6">
+                <p>My Wallet</p>
+                <p>
+                    $<span id="money">00.00</span>
+                </p>
+            </div>
+        </div>
+        <div class="row mt-5" id="snacks">
+                <!-- //SNACKS GO HERE -->
+        </div>
+    </main>
+    <footer class="gradient text-light">
+        <div class="text-center">
+            <p><small class="text-shadow">Made with love by Codeworks</small></p>
+        </div>
+    </footer>
+
+    <script src="app/main.js" type="module"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+    <!-- //NOTE sweet alert cdn -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+</body>
+
+</html>
+
